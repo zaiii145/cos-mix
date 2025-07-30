@@ -1,0 +1,27 @@
+# Python specific ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.vscode/ # Optional: if you use VSCode and don't want its settings in Git
+
+# Streamlit specific ignores
+.streamlit/
+.streamlit/config.toml # If you want to ignore user-specific Streamlit config
+
+# Spotify API specific ignores
+src/config.py        # This is the CRITICAL line for your API keys!
+.spotify_cache       # Spotipy's cached tokens
+
+# Operating System / IDE specific ignores
+.DS_Store            # macOS specific
+Thumbs.db            # Windows specific
+*.log
+*.temp
